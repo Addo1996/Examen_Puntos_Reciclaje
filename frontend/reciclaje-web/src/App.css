@@ -1,0 +1,201 @@
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 35px 25px;
+}
+
+/* Encabezado */
+.encabezado {
+    background: linear-gradient(135deg, #145c38, #26965c);
+    color: white;
+    padding: 35px 25px;
+    border-radius: 18px;
+    text-align: center;
+    margin-bottom: 35px;
+    box-shadow: 0 8px 25px rgba(20, 92, 56, 0.18);
+}
+
+.encabezado h1 {
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+
+.encabezado p {
+    margin: 0;
+    color: #e2f5e9;
+}
+
+/* Titulos */
+h2 {
+    color: #145c38;
+    margin-bottom: 18px;
+    font-size: 23px;
+}
+
+/* Formulario */
+form {
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5eee8;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d5e2d9;
+    border-radius: 9px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #26965c;
+    box-shadow: 0 0 0 3px rgba(38, 150, 92, 0.12);
+}
+
+/* Boton */
+button {
+    grid-column: 1 / -1;
+    padding: 15px;
+    background: linear-gradient(135deg, #218653, #176b45);
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(33, 134, 83, 0.25);
+}
+
+/* Lista de puntos */
+.lista-puntos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    margin-top: 22px;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background: white;
+    padding: 23px;
+    border-radius: 15px;
+    border: 1px solid #e5eee8;
+    border-left: 5px solid #26965c;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
+.tarjeta h3 {
+    color: #176b45;
+    margin: 0 0 18px;
+    font-size: 19px;
+}
+
+.tarjeta p {
+    color: #526158;
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+.tarjeta strong {
+    color: #263d30;
+}
+
+/* Adaptacion para celulares */
+@media (max-width: 600px) {
+    .contenedor {
+        padding: 20px 14px;
+    }
+
+    .encabezado {
+        padding: 28px 15px;
+    }
+
+    .encabezado h1 {
+        font-size: 24px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .lista-puntos {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Indicadores del sistema */
+.indicadores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin: 30px 0;
+}
+
+.indicador {
+    background: white;
+    padding: 22px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #e5eee8;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.indicador:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
+}
+
+.indicador .icono {
+    font-size: 28px;
+}
+
+.indicador h3 {
+    color: #176b45;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.indicador p {
+    color: #526158;
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .indicadores {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .indicador {
+        padding: 17px;
+    }
+}
+
