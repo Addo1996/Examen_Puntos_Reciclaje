@@ -1,5 +1,0 @@
-package com.examen.reciclaje.repository;
-
-public interface PuntoReciclajeRepository {
-
-}

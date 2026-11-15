@@ -1,10 +1,11 @@
 # Eclipse
 .metadata/
+**/.metadata/
 .project
 .classpath
 .settings/
 
-# Java
+# Java y Maven
 target/
 
 # React
